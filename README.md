@@ -1,1 +1,1 @@
-## Klapi web client
+## Klapi web client for scouters
