@@ -1,0 +1,30 @@
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: rgb(23, 23, 63);
+    color: white;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.nav-links {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    list-style: none;
+}
+
+.nav-links li {
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        width: 100%;
+    }
+}
