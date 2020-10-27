@@ -11,7 +11,7 @@ import Rastilistat from './components/rastilistat/Rastilistat';
 
 function App() {
   return (
-    <React.Fragment>
+    <>
 
       <Router>
         <div className="App">
@@ -25,7 +25,7 @@ function App() {
         </div>
       </Router>
 
-    </React.Fragment>
+    <>
 
   );
 }
