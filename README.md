@@ -1,1 +1,1 @@
-## Klapi web client for scouters
+## Klapi web client for finlands scouters
