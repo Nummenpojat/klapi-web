@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Rastilistat() {
+const Rastilistat = () => {
     return (
         <div>
             <h1>Rastilistat</h1>

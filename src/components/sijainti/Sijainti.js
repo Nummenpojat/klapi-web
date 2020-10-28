@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Location() {
+const Location = () => {
     return (
         <h1>Sijainti</h1>
     );

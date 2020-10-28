@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Tasks() {
+const Tasks = () => {
     return (
         <h1>Tehtävät</h1>
     );

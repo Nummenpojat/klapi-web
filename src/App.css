@@ -19,6 +19,10 @@
     list-style: none;
 }
 
+.nav-links li:hover {
+     color:green;
+}
+
 .nav-links li {
     color: white;
 }
