@@ -20,11 +20,13 @@
 }
 
 .nav-links li:hover {
-     color:green;
+     color: #c74446;
+
 }
 
 .nav-links li {
     color: white;
+    text-align:center;
 }
 
 @media screen and (max-width: 768px) {
