@@ -1,7 +1,7 @@
 /*
 Copyright (c) 2020 Otso Kurkela & Elias Mäkelä
 */
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -12,6 +12,9 @@ import Home from './components/Home';
 import Rastilistat from './components/rastilistat/Rastilistat';
 
 const App = () => {
+  // Defined state hooks
+  const [mode, setMode] = useState('arki');
+
   return (
     <>
 
@@ -28,7 +31,10 @@ const App = () => {
       </Router>
 
     </>
-
+    /* 
+return view with components. React Router is used for navigating between different components.
+Switch and exact-keyword are used for making sure that every path works correctly.
+   */
   );
 }
 
