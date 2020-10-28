@@ -1,6 +1,10 @@
+/*
+Copyright (c) 2020 Otso Kurkela & Elias Mäkelä
+*/
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// Component for bottom navigation
 const Nav = () => {
     return (
         <nav className="bottom-nav">

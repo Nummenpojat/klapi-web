@@ -1,9 +1,13 @@
+/*
+Copyright (c) 2020 Otso Kurkela & Elias Mäkelä
+*/
 import React from 'react';
 
-const Location = () => {
+//Component for locations
+const Sijainti = () => {
     return (
         <h1>Sijainti</h1>
     );
 }
 
-export default Location;
+export default Sijainti;

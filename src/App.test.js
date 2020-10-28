@@ -1,3 +1,6 @@
+/*
+Copyright (c) 2020 Otso Kurkela
+*/
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
