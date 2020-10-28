@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Nav from './components/Nav';
@@ -9,7 +8,7 @@ import Tehtavat from './components/tehtavat/Tehtavat';
 import Home from './components/Home';
 import Rastilistat from './components/rastilistat/Rastilistat';
 
-function App() {
+const App = () => {
   return (
     <>
 
@@ -25,7 +24,7 @@ function App() {
         </div>
       </Router>
 
-    <>
+    </>
 
   );
 }

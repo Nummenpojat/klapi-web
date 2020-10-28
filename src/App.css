@@ -19,8 +19,14 @@
     list-style: none;
 }
 
+.nav-links li:hover {
+     color: #da251c;
+
+}
+
 .nav-links li {
     color: white;
+    text-align:center;
 }
 
 @media screen and (max-width: 768px) {
