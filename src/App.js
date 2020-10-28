@@ -9,7 +9,7 @@ import Tehtavat from './components/tehtavat/Tehtavat';
 import Home from './components/Home';
 import Rastilistat from './components/rastilistat/Rastilistat';
 
-function App() {
+const App = () => {
   return (
     <>
 
