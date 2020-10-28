@@ -3,6 +3,7 @@ Copyright (c) 2020 Otso Kurkela & Elias Mäkelä
 */
 import React from 'react';
 
+// Component for ckecklists
 const Rastilistat = () => {
     return (
         <div>
