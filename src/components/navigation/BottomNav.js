@@ -3,9 +3,10 @@ Copyright (c) 2020 Otso Kurkela & Elias Mäkelä
 */
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './navigation.css';
 
-// Component for bottom navigation
-const Nav = () => {
+// Component for bottom navigation bar
+const BottomNav = () => {
     return (
         <nav className="bottom-nav">
             <ul className="nav-links">
@@ -23,4 +24,4 @@ const Nav = () => {
     );
 }
 
-export default Nav;
+export default BottomNav;
