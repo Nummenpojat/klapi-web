@@ -14,7 +14,7 @@ const TopNav = () => {
     const handleBurgerClick = () => {
         const dropdown = document.querySelector("#top-dropdown");
 
-        if (dropdownClicked == false) {
+        if (dropdownClicked === false) {
             dropdown.classList.remove("top-dropdown-invisible");
             dropdown.classList.add("top-dropdown-visible");
             setDropdownClicked(true);
