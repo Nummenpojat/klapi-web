@@ -1,11 +1,18 @@
 /*
 Copyright (c) 2020 Otso Kurkela
 */
+
+//import React and 3rd party components
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+// import custom components
+import App from './App';
+
+// import stylesheets
+import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
