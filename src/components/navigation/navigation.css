@@ -38,6 +38,7 @@
     align-items: center;
     background-color: #253764;
     min-height: 9vh;
+    z-index: -1;
 }
 
 .logo {
@@ -63,28 +64,37 @@
     transition: all 0.2s ease;
 }
 
-.dropdown-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
 #top-dropdown {
     width: 20vh;
     height: 20vh;
+    display: flex;
     background-color: transparent;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    z-index: 10;
+    float: right;
+    transition: transform 0.5s ease-in;
 }
 
 .top-dropdown-visible {
-    display: flex;
+    opacity: 1;
 }
 
 .top-dropdown-invisible {
-    display: none;
+    opacity: 0;
+}
+
+.link {
+    text-decoration: none;
+    list-style: none;
+}
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 768px) {
