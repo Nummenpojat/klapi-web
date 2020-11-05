@@ -4,6 +4,7 @@ Copyright (c) 2020 Otso Kurkela
 
 .bottom-nav {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     min-height: 10vh;
@@ -14,24 +15,16 @@ Copyright (c) 2020 Otso Kurkela
     bottom: 0;
 }
 
-.nav-links {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
+.bottom-nav li {
+    color: white;
     list-style: none;
 }
 
-.nav-links li:hover {
+.bottom-nav li:hover {
      color: #f04150;
 
 }
 
-.nav-links li {
-    color: white;
-    text-align:center;
-}
 
 .top-nav {
     top: 0;

@@ -13,17 +13,17 @@ import './navigation.css';
 const BottomNav = () => {
     return (
         <nav className="bottom-nav">
-            <ul className="nav-links">
-                <Link to="/sijainti">
-                    <li>Sijainti</li>
-                </Link>
-                <Link to="/tehtavat">
-                    <li>Tehtävät</li>
-                </Link>
-                <Link to="/rastilistat">
-                    <li>Rastilistat</li>
-                </Link>
-            </ul>
+
+            <Link to="/sijainti">
+                <li>Sijainti</li>
+            </Link>
+            <Link to="/tehtavat">
+                <li>Tehtävät</li>
+            </Link>
+            <Link to="/rastilistat">
+                <li>Rastilistat</li>
+            </Link>
+
         </nav>
     );
 }
