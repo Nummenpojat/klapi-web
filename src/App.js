@@ -22,13 +22,14 @@ const App = () => {
       <Router>
         <div className="App">
           <TopNav />
-          <BottomNav />
+
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/sijainti" exact component={Sijainti} />
             <Route path="/tehtavat" exact component={Tehtavat} />
             <Route path="/rastilistat" exact component={Rastilistat} />
           </Switch>
+          <BottomNav />
         </div>
       </Router>
 
