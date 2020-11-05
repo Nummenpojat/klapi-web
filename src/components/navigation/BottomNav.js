@@ -1,8 +1,12 @@
 /*
 Copyright (c) 2020 Otso Kurkela & Elias Mäkelä
 */
+
+// import React and 3rd party components
 import React from 'react';
 import { Link } from 'react-router-dom';
+
+// import stylesheets
 import './navigation.css';
 
 // Component for bottom navigation bar
