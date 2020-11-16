@@ -1,3 +1,7 @@
+/*
+Copyright (c) 2020 Otso Kurkela
+*/
+
 // import React and 3rd party components
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -8,6 +12,7 @@ import { Link } from 'react-router-dom';
 // import stylesheets
 import './navigation.css';
 
+// component for top navigation bar
 const TopNav = () => {
     const [dropdownClicked, setDropdownClicked] = useState(false);
 

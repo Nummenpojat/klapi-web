@@ -1,32 +1,40 @@
+/*
+Copyright (c) 2020 Otso Kurkela
+*/
+
 .bottom-nav {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     min-height: 10vh;
     background-color:#253764;
     color: white;
     width: 100%;
     position: fixed;
     bottom: 0;
+    flex-wrap: wrap;
 }
 
+.bottom-nav li {
+    color: white;
+    list-style: none;
+}
 .nav-links {
-    width: 50%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-
-    list-style: none;
+    width: 100%;
+    height: 10vh;
 }
-
-.nav-links li:hover {
+.bottom-nav li:hover {
      color: #f04150;
 
 }
 
-.nav-links li {
-    color: white;
-    text-align:center;
+#bottom-dash {
+    bottom: 0;
+    height: 3px;
+    background-color: red;
+    width: 33%;
+    margin-left: 0;
 }
 
 .top-nav {
