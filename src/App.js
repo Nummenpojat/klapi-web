@@ -25,9 +25,9 @@ const App = () => {
 
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/sijainti" exact component={Sijainti} />
-            <Route path="/tehtavat" exact component={Tehtavat} />
-            <Route path="/rastilistat" exact component={Rastilistat} />
+            <Route path="/map" exact component={Sijainti} />
+            <Route path="/tasks" exact component={Tehtavat} />
+            <Route path="/checklists" exact component={Rastilistat} />
           </Switch>
           <BottomNav />
         </div>

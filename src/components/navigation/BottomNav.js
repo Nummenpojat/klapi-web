@@ -27,13 +27,13 @@ const BottomNav = () => {
     return (
         <nav className="bottom-nav">
             <div className="nav-links">
-                <Link to="/sijainti" onClick={() => swapDash("left")}>
+                <Link to="/map" onClick={() => swapDash("left")}>
                     <li>Sijainti</li>
                 </Link>
-                <Link to="/tehtavat" onClick={() => swapDash("center")}>
+                <Link to="/tasks" onClick={() => swapDash("center")}>
                     <li>Tehtävät</li>
                 </Link>
-                <Link to="/rastilistat" onClick={() => swapDash("right")}>
+                <Link to="/checklists" onClick={() => swapDash("right")}>
                     <li>Rastilistat</li>
                 </Link>
             </div>
