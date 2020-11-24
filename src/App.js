@@ -1,40 +1,38 @@
 /*
 Copyright (c) 2020 Otso Kurkela & Elias Mäkelä
 */
+// import React and 3rd party components
 import React, { useState } from 'react';
-import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import BottomNav from './components/navigation/BottomNav';
-import TopNav from './components/navigation/TopNav';
-import Sijainti from './components/sijainti/Sijainti';
-import Tehtavat from './components/tehtavat/Tehtavat';
-import Home from './components/Home';
-import Rastilistat from './components/rastilistat/Rastilistat';
+// import 1st party components
+import TopMenu from './components/navigation/TopMenu';
+import Checklists from './components/Checklists/Checklists';
+import Tasks from './components/Tasks/Tasks';
+import Map from './components/Map/Map';
+
+//import stylesheets
+import './App.css';
+
+
 
 const App = () => {
-  // Defined state hooks
-  const [mode, setMode] = useState('arki');
-
   return (
-    <>
+    <Router>
+      <div className="App" id="outer-container">
+        <TopMenu />
 
-      <Router>
-        <div className="App">
-          <TopNav />
-
+        <div id="page-wrap">
           <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/map" exact component={Sijainti} />
-            <Route path="/tasks" exact component={Tehtavat} />
-            <Route path="/checklists" exact component={Rastilistat} />
+            <Route exact path="/map" component={Map} />
+            <Route exact path="/checklists" component={Checklists} />
+            <Route exact path="/tasks" component={Tasks} />
           </Switch>
-          <BottomNav />
         </div>
-      </Router>
 
-    </>
+      </div>
+    </Router>
+
   );
 }
-
 export default App;
