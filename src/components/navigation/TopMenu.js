@@ -1,6 +1,6 @@
 import React from 'react';
 import Sidebar from './Sidebar';
-import './../../styles/Topmenu.css';
+import './../../styles/navigation.css';
 
 const TopMenu = () => {
     return (
