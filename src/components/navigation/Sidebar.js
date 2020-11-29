@@ -6,7 +6,6 @@ import './../../styles/Sidebar.css';
 const Sidebar = props => {
     return (
         <Menu>
-
             <a className="menu-item" href="/salads">
                 Profiili
                 </a>

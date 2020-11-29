@@ -15,7 +15,20 @@ import Map from './components/Map/Map';
 //import stylesheets
 import './App.css';
 
-
+const bottomLinks = [
+  {
+      name: "Tehtävät",
+      link: "/tasks"
+  },
+  {
+      name: "Kartta",
+      link: "/map"
+  },
+  {
+    name: "Rastilistat",
+    link: "/checklists"
+  }
+];
 
 const App = () => {
   return (
@@ -30,7 +43,7 @@ const App = () => {
             <Route exact path="/tasks" component={Tasks} />
           </Switch>
         </div>
-        <BottomMenu />
+        <BottomMenu bottomLinks={bottomLinks}/>
       </div>
     </Router>
 

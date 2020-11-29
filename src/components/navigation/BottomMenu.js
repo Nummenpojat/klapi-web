@@ -1,15 +1,24 @@
 /* copyright (c) 2020 Otso Kurkela */
-import React from 'react';
+
+// import React and 3rd party components
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 
-const BottomMenu = () => {
+//import stylesheets
+import './../../styles/navigation.css';
+const BottomMenu = (props) => {
+
+const [bottomLinks, useBottomLinks] = useState(props.bottomLinks);
     return (
         <div className="bottom-nav">
-            <Link to="/tasks"><p>Tehtävät</p></Link>
-            <Link to="/checklists"><p>Rastilistat</p></Link>
-            <Link to="/map"><p>Kartta</p></Link>
+    {bottomLinks.map((link, i) => {
+        return (
+        <Link to={link.link}><p className="bottom-link">{link.name}</p></Link>
+        );
+    })}
+
+
         </div>
     );
-}
-
+    }
 export default BottomMenu;
