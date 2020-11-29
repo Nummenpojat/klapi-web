@@ -17,11 +17,7 @@
     bottom: 0;
 }
 
-.bottom-nav * {
-    color: #ffffff; 
-    list-style: none;
-    text-decoration: none;
-}
+
 
 .outer-topmenu {
     margin-left: 40%;
@@ -41,6 +37,11 @@
 
 .outer-topmenu h2 {
     color: #ffffff;
+}
+
+.bottom-link {
+    color: #ffffff;
+    font-size: 20px;
 }
 
 @media screen and (max-width: 800px) {
