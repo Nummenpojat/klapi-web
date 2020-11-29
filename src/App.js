@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 // import 1st party components
 import TopMenu from './components/navigation/TopMenu';
+import BottomMenu from './components/navigation/BottomMenu';
 import Checklists from './components/Checklists/Checklists';
 import Tasks from './components/Tasks/Tasks';
 import Map from './components/Map/Map';
@@ -14,7 +15,20 @@ import Map from './components/Map/Map';
 //import stylesheets
 import './App.css';
 
-
+const bottomLinks = [
+  {
+      name: "Tehtävät",
+      link: "/tasks"
+  },
+  {
+      name: "Kartta",
+      link: "/map"
+  },
+  {
+    name: "Rastilistat",
+    link: "/checklists"
+  }
+];
 
 const App = () => {
   return (
@@ -29,7 +43,7 @@ const App = () => {
             <Route exact path="/tasks" component={Tasks} />
           </Switch>
         </div>
-
+        <BottomMenu bottomLinks={bottomLinks}/>
       </div>
     </Router>
 

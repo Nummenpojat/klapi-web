@@ -1,3 +1,4 @@
+/* copyright (c) 2020 Otso Kurkela*/
 import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import './../../styles/Sidebar.css';
@@ -5,7 +6,6 @@ import './../../styles/Sidebar.css';
 const Sidebar = props => {
     return (
         <Menu>
-
             <a className="menu-item" href="/salads">
                 Profiili
                 </a>
