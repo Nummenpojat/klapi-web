@@ -15,6 +15,14 @@ import Map from './components/Map/Map';
 //import stylesheets
 import './App.css';
 
+const user = {
+  firstName: "John",
+  localGroup: "",
+  ageSection: "",
+  positions: []
+}
+
+
 const bottomLinks = [
   {
       name: "Tehtävät",
@@ -31,6 +39,8 @@ const bottomLinks = [
 ];
 
 const App = () => {
+  const [scoutMode, setScoutMode] = useState('');
+
   return (
     <Router>
       <div className="App" id="outer-container">
@@ -43,7 +53,7 @@ const App = () => {
             <Route exact path="/tasks" component={Tasks} />
           </Switch>
         </div>
-        <BottomMenu bottomLinks={bottomLinks}/>
+        <BottomMenu bottomLinks={bottomLinks} scoutMode={scoutMode} />
       </div>
     </Router>
 
