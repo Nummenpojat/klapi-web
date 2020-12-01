@@ -1,7 +1,13 @@
 /* copyright (c) 2020 Otso Kurkela */
+
+//import react and 3rd party components
 import React from 'react';
+
+//import 1st party components
 import Sidebar from './Sidebar';
-import './../../styles/navigation.css';
+
+//import stylesheets
+import './navigation.css';
 
 const TopMenu = () => {
     return (

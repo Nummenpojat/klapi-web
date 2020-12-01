@@ -1,0 +1,51 @@
+.topmenu {
+    height: 70px;
+    width: 100%;
+    background-color: rgb(23, 23, 63);
+    display: flex;
+}
+
+.bottom-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 10%;
+    background-color: rgb(23, 23, 63);
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+.outer-topmenu {
+    margin-left: 40%;
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.inner-topmenu {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    padding-right: 2%;
+}
+
+.outer-topmenu h2 {
+    color: #ffffff;
+}
+
+.bottom-link {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .outer-topmenu {
+        margin-left: 30%;
+    }
+}
