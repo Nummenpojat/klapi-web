@@ -11,14 +11,17 @@ import BottomMenu from './components/navigation/BottomMenu';
 import Checklists from './components/Checklists/Checklists';
 import Tasks from './components/Tasks/Tasks';
 import Map from './components/Map/Map';
+import Settings from './components/Settings/Settings';
+import Profile from './components/Profile/Profile';
 
 //import stylesheets
 import './App.css';
 
 const user = {
   firstName: "John",
-  localGroup: "",
-  ageSection: "",
+  lastName: "Doe",
+  localGroup: "Hyvinkään Nummenpojat",
+  ageSection: "Explorer",
   positions: []
 }
 
@@ -45,14 +48,16 @@ const App = () => {
     <Router>
       <div className="App" id="outer-container">
         <TopMenu />
-
         <div id="page-wrap">
           <Switch>
             <Route exact path="/map" component={Map} />
             <Route exact path="/checklists" component={Checklists} />
             <Route exact path="/tasks" component={Tasks} />
+            <Route exact path="/settings" component={Settings} />
+            <Route exact path="/profile" component={Profile} />
           </Switch>
         </div>
+
         <BottomMenu bottomLinks={bottomLinks} scoutMode={scoutMode} />
       </div>
     </Router>
