@@ -2,7 +2,9 @@ import React from 'react';
 
 const Profile = () => {
     return (
-        <h1>Profiili sivu</h1>
+        <div className="profile">
+            <h1>Profiili sivu</h1>
+        </div>
     );
 }
 

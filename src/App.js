@@ -11,8 +11,9 @@ import BottomMenu from './components/navigation/BottomMenu';
 import Checklists from './components/Checklists/Checklists';
 import Tasks from './components/Tasks/Tasks';
 import Map from './components/Map/Map';
-import Settings from './components/Settings/Settings';
-import Profile from './components/Profile/Profile';
+import Settings from './components/general/Settings';
+import Profile from './components/general/Profile';
+import Index from './components/general/Index';
 
 //import stylesheets
 import './App.css';
@@ -47,9 +48,10 @@ const App = () => {
   return (
     <Router>
       <div className="App" id="outer-container">
-        <TopMenu />
+        <TopMenu user={user} />
         <div id="page-wrap">
           <Switch>
+            <Route exact path="/" component={Index} />
             <Route exact path="/map" component={Map} />
             <Route exact path="/checklists" component={Checklists} />
             <Route exact path="/tasks" component={Tasks} />

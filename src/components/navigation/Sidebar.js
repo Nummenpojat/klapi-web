@@ -16,8 +16,6 @@ class Sidebar extends React.Component {
       }
     }
   
-    // This keeps your state in sync with the opening/closing of the menu
-    // via the default means, e.g. clicking the X, pressing the ESC key etc.
     handleStateChange (state) {
       this.setState({menuOpen: state.isOpen})  
     }
@@ -29,16 +27,15 @@ class Sidebar extends React.Component {
     toggleMenu () {
       this.setState(state => ({menuOpen: !state.menuOpen}))
     }
-  
     render () {
       return (
         <div>
           <Menu 
             isOpen={this.state.menuOpen}
-            onStateChange={(state) => this.handleStateChange(state)}
-          >
-            <Link to="/settings" onClick={() => this.closeMenu()}>Asetukset</Link>
-            <Link to="/profile" onClick={() => this.closeMenu()}>Profiili</Link>
+            onStateChange={(state) => this.handleStateChange(state)}>
+          
+          <Link to="/profile" onClick={() => this.closeMenu()}>Profiili</Link>
+          <Link to="/settings" onClick={() => this.closeMenu()}>Asetukset</Link>  
           </Menu>
         </div>
       )
