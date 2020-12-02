@@ -12,7 +12,8 @@ class Sidebar extends React.Component {
     constructor (props) {
       super(props)
       this.state = {
-        menuOpen: false
+        menuOpen: false,
+        user: this.props.user
       }
     }
   

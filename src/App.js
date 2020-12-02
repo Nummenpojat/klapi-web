@@ -2,7 +2,7 @@
 Copyright (c) 2020 Otso Kurkela & Elias Mäkelä
 */
 // import React and 3rd party components
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 // import 1st party components
@@ -15,16 +15,12 @@ import Settings from './components/general/Settings';
 import Profile from './components/general/Profile';
 import Index from './components/general/Index';
 
+// import 1st party modules
+import UserContext from './UserContext';
 //import stylesheets
 import './App.css';
+import userEvent from '@testing-library/user-event';
 
-const user = {
-  firstName: "John",
-  lastName: "Doe",
-  localGroup: "Hyvinkään Nummenpojat",
-  ageSection: "Explorer",
-  positions: []
-}
 
 
 const bottomLinks = [
@@ -43,9 +39,12 @@ const bottomLinks = [
 ];
 
 const App = () => {
+  const user = useContext(UserContext);
+  user.firstName = "Ode";
   const [scoutMode, setScoutMode] = useState('');
 
   return (
+    
     <Router>
       <div className="App" id="outer-container">
         <TopMenu user={user} />
@@ -59,11 +58,9 @@ const App = () => {
             <Route exact path="/profile" component={Profile} />
           </Switch>
         </div>
-
         <BottomMenu bottomLinks={bottomLinks} scoutMode={scoutMode} />
       </div>
     </Router>
-
   );
 }
 export default App;
