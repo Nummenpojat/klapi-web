@@ -2,7 +2,7 @@
 Copyright (c) 2020 Otso Kurkela & Elias Mäkelä
 */
 // import React and 3rd party components
-import React, { useState, useContext } from 'react';
+import React, { useState, createContext, useContext } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 // import 1st party components
@@ -16,7 +16,10 @@ import Profile from './components/general/Profile';
 import Index from './components/general/Index';
 
 // import 1st party modules
-import UserContext from './UserContext';
+
+//import 3rd party modules
+import axios from 'axios';
+
 //import stylesheets
 import './App.css';
 import userEvent from '@testing-library/user-event';
@@ -39,15 +42,23 @@ const bottomLinks = [
 ];
 
 const App = () => {
-  const user = useContext(UserContext);
-  user.firstName = "Ode";
+  const [user, setUser] = useState({});
+
+  const userPromise = axios.get('http://localhost:3001/api/user');
+  userPromise.then(response => {
+    console.log(response);
+  })
+    
   const [scoutMode, setScoutMode] = useState('');
+
+
 
   return (
     
     <Router>
       <div className="App" id="outer-container">
-        <TopMenu user={user} />
+        <TopMenu user={user.firstName} />
+        <h1>{user.firstName}</h1>
         <div id="page-wrap">
           <Switch>
             <Route exact path="/" component={Index} />
