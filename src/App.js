@@ -43,22 +43,21 @@ const bottomLinks = [
 
 const App = () => {
   const [user, setUser] = useState({});
+  
 
-  const userPromise = axios.get('http://localhost:3001/api/user');
-  userPromise.then(response => {
-    console.log(response);
-  })
-    
-  const [scoutMode, setScoutMode] = useState('');
-
+  fetch('http://localhost:3001/api/user')
+    .then(response => response.json())
+    .then(data => {
+      setUser(data);
+    });
 
 
   return (
     
     <Router>
       <div className="App" id="outer-container">
-        <TopMenu user={user.firstName} />
-        <h1>{user.firstName}</h1>
+        <TopMenu user={user} />
+
         <div id="page-wrap">
           <Switch>
             <Route exact path="/" component={Index} />
@@ -68,8 +67,9 @@ const App = () => {
             <Route exact path="/settings" component={Settings} />
             <Route exact path="/profile" component={Profile} />
           </Switch>
+
         </div>
-        <BottomMenu bottomLinks={bottomLinks} scoutMode={scoutMode} />
+        <BottomMenu bottomLinks={bottomLinks} />
       </div>
     </Router>
   );
