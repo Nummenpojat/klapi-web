@@ -2,11 +2,9 @@
 Copyright (c) 2020 Otso Kurkela
 */
 
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import * as serviceWorker from './serviceWorker';
 
 // import custom components
 import App from './App';
@@ -22,4 +20,3 @@ ReactDOM.render(
 );
 
 reportWebVitals();
-serviceWorker.register();

@@ -5,7 +5,7 @@ import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 
 //import stylesheets
-import './../../styles/navigation.css';
+import './navigation.css';
 const BottomMenu = (props) => {
 
 const [bottomLinks, useBottomLinks] = useState(props.bottomLinks);
