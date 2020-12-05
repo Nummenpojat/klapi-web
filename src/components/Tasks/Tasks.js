@@ -2,7 +2,7 @@ import React from 'react';
 
 const Tasks = () => {
     return (
-        <h1>Tehtävät sivu</h1>
+        <h1>Tasks view</h1>
     );
 }
 

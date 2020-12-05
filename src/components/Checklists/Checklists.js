@@ -2,7 +2,7 @@ import React from 'react';
 
 const Checklists = () => {
     return (
-        <h1>Rastilistasivu</h1>
+        <h1>Checklists view</h1>
     );
 }
 
