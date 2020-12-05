@@ -35,8 +35,8 @@ class Sidebar extends React.Component {
             isOpen={this.state.menuOpen}
             onStateChange={(state) => this.handleStateChange(state)}>
           
-          <Link to="/profile" onClick={() => this.closeMenu()}>Profiili</Link>
-          <Link to="/settings" onClick={() => this.closeMenu()}>Asetukset</Link>  
+          <Link to="/profile" onClick={() => this.closeMenu()}>Profile</Link>
+          <Link to="/settings" onClick={() => this.closeMenu()}>Settings</Link>  
           </Menu>
         </div>
       )

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Map = () => {
     return (
-        <h1>Karttasivu</h1>
+        <h1>Map view</h1>
     );
 }
 export default Map;

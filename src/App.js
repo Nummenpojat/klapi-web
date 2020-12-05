@@ -28,15 +28,15 @@ import userEvent from '@testing-library/user-event';
 
 const bottomLinks = [
   {
-      name: "Tehtävät",
+      name: "Tasks",
       link: "/tasks"
   },
   {
-      name: "Kartta",
+      name: "Map",
       link: "/map"
   },
   {
-    name: "Rastilistat",
+    name: "Checklists",
     link: "/checklists"
   }
 ];
