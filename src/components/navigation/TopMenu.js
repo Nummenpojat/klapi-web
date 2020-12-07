@@ -11,20 +11,28 @@ import './navigation.css';
 const TopMenu = (props) => {
     
 const toggleDropdown = (dropdown) => {
-    if (dropdown === "none") {
-        document.querySelector("#dropdown-menu").style.display = "flex";
-    } else {
-        document.querySelector("#dropdown-menu").style.display = "none";
-    }
+
+   if(dropdown.classList.contains("dropdown-invisible")) {
+       dropdown.classList.remove("dropdown-invisible");
+       dropdown.classList.add("dropdown-visible");
+   } 
+
+   else if (dropdown.classList.contains("dropdown-visible")){
+       dropdown.classList.remove("dropdown-visible");
+       dropdown.classList.add("dropdown-invisible");
+   }
+
+    else {
+       console.log("Error");
+   }
 }
     return (
         <>
         <div className="topmenu" id="topmenu">
             
             <div className="burger" onClick={() => {
-            let dropdownMenuDisplay = document.querySelector("#dropdown-menu").style.display;
-            toggleDropdown(dropdownMenuDisplay);
-        }}>
+                toggleDropdown(document.querySelector("#dropdown"));
+            }}>
                 {
                     [0, 1, 2].map(() => {
                         return (<div></div>);
@@ -36,7 +44,7 @@ const toggleDropdown = (dropdown) => {
             <img src="#" alt="logo" className="logo" height="50" width="50" style={{backgroundColor: 'white'}}/>
             
         </div>
-        <div className="dropdown-menu" id="dropdown-menu" >
+        <div className="dropdown-invisible" id="dropdown">
             <p>Dropdown item</p>
             <p>Dropdown item</p>
             <p>Dropdown item</p>
