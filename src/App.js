@@ -33,10 +33,6 @@ const bottomLinks = [
       link: "/tasks"
   },
   {
-      name: "Map",
-      link: "/map"
-  },
-  {
     name: "Checklists",
     link: "/checklists"
   }

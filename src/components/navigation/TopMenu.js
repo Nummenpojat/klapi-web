@@ -10,6 +10,7 @@ import './navigation.css';
 
 const TopMenu = (props) => {
     
+    // function for toggling between dropdown-visible and dropdown-invisible classes
 const toggleDropdown = (dropdown) => {
 
    if(dropdown.classList.contains("dropdown-invisible")) {
