@@ -14,7 +14,7 @@
 }
 .completed-tasks, .uncompleted-tasks {
     width: 400px;
-    background-color: yellow;
+    background-color: yellowgreen;
 }
 .uncompleted-container {
     display: flex;
