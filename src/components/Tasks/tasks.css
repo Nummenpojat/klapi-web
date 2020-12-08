@@ -1,0 +1,24 @@
+.tasks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aqua;
+}
+
+.completed-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.completed-tasks, .uncompleted-tasks {
+    width: 400px;
+    background-color: yellowgreen;
+}
+.uncompleted-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
