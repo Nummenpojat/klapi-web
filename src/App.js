@@ -24,7 +24,8 @@ import axios from 'axios';
 import './App.css';
 import userEvent from '@testing-library/user-event';
 
-
+// import environment variables
+import baseUrl from "./variables";
 
 const bottomLinks = [
   {
@@ -32,23 +33,24 @@ const bottomLinks = [
       link: "/tasks"
   },
   {
-      name: "Map",
-      link: "/map"
-  },
-  {
     name: "Checklists",
     link: "/checklists"
   }
 ];
 
-const App = () => {
+const App = (props) => {
   const [user, setUser] = useState({});
   
 
-  fetch('http://localhost:3001/api/user')
+  fetch(`${baseUrl}/api/user`)
     .then(response => response.json())
     .then(data => {
       setUser(data);
+    })
+    .catch(error => {
+      console.log(`Error: ${error}`);
+      console.log("If this error is 404, it might be because you don't have server running on your local host.");
+      console.log("This code expects that you have a local copy of backend runnning on port 3001.");
     });
 
 
