@@ -42,7 +42,7 @@ const App = (props) => {
   const [user, setUser] = useState({});
   
 
-  fetch(`${baseUrl}/api/user`)
+  fetch(`${baseUrl}/api/users/john_doe`)
     .then(response => response.json())
     .then(data => {
       setUser(data);
@@ -59,7 +59,6 @@ const App = (props) => {
     <Router>
       <div className="App" id="outer-container">
         <TopMenu user={user} />
-
         <div id="page-wrap">
           <Switch>
             <Route exact path="/" component={Index} />
