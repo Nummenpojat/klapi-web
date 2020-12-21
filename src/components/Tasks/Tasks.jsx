@@ -4,7 +4,7 @@ import {useState} from 'react';
 
 
 //import 1st party modules
-import baseUrl from './../../variables';
+import baseUrl from '../../variables';
 
 //import stylesheets
 import './tasks.css';
