@@ -1,3 +1,6 @@
+/* 
+copyright (c) 2020-2021 Otso Kurkela
+*/
 //import React and 3rd party components
 import React from 'react';
 import {useState} from 'react';

@@ -1,5 +1,5 @@
-/*
-Copyright (c) 2020 Otso Kurkela
+/* 
+copyright (c) 2020-2021 Otso Kurkela
 */
 
 import React from 'react';
