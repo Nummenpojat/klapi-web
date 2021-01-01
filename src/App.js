@@ -1,6 +1,4 @@
-/*
-Copyright (c) 2020-2021 Otso Kurkela & Elias Mäkelä
-*/
+/* copyright (c) 2020- Otso Kurkela & Elias Mäkelä */
 
 // import React and 3rd party components
 import React, { useState, createContext, useContext } from 'react';

@@ -1,8 +1,7 @@
-import React from 'react';
+/* copyright (c) 2020- Otso Kurkela */
 
-const Map = () => {
+export default () => {
     return (
         <h1>Map view</h1>
     );
 }
-export default Map;

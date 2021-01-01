@@ -1,9 +1,6 @@
-import React from 'react';
 
-const Checklists = () => {
+export default () => {
     return (
         <h1>Checklists view</h1>
     );
 }
-
-export default Checklists;
