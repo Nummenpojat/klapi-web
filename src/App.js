@@ -7,8 +7,8 @@ import React, { useState, createContext, useContext } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 // import 1st party components
-import TopMenu from './components/navigation/TopMenu.jsx';
-import BottomMenu from './components/navigation/BottomMenu.jsx';
+import TopMenu from './components/navigation/menus/TopMenu.jsx';
+import BottomMenu from './components/navigation/menus/BottomMenu.jsx';
 import Checklists from './components/Checklists/Checklists.jsx';
 import Tasks from './components/Tasks/Tasks.jsx';
 import Map from './components/Map/Map.jsx';
