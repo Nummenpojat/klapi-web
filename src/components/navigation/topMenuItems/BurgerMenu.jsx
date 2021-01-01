@@ -1,5 +1,5 @@
-import React from 'react';
-
+/* copyright (c) 2021- Otso Kurkela */
+    
 export default () => {
     const toggleDropdown = (dropdown) => {
 

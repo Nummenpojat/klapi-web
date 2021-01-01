@@ -1,6 +1,4 @@
-/* 
-copyright (c) 2020-2021 Otso Kurkela
-*/
+/* copyright (c) 2020- Otso Kurkela */
 
 // import React and 3rd party components
 import React, {useState} from 'react';

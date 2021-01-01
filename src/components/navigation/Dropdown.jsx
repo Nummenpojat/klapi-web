@@ -1,3 +1,5 @@
+/* copyright (c) 2020- Otso Kurkela */
+
 import React from 'react';
 
 export default () => {

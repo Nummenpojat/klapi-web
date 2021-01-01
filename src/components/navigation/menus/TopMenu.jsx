@@ -1,8 +1,5 @@
-/* 
-copyright (c) 2020-2021 Otso Kurkela
-*/
+/* copyright (c) 2020- Otso Kurkela */
 
-//import react and 3rd party components
 
 //import 1st party components
 import Dropdown from './../Dropdown';
@@ -13,9 +10,8 @@ import Logo from './../topMenuItems/Logo';
 //import stylesheets
 import './../navigation.css';
 
-const TopMenu = (props) => {
+export default props => {
     
-    // function for toggling between dropdown-visible and dropdown-invisible classes
 
     return (
         <>
@@ -24,11 +20,8 @@ const TopMenu = (props) => {
             <BurgerMenu />
             <Header />
             <Logo />
-               
-            
         </div>
         <Dropdown />
         </>
     )
 }
-export default TopMenu;
