@@ -1,12 +1,9 @@
-/* copyright (c) 2020 Otso Kurkela */
-
-//import react and 3rd party components
-import React from 'react';
+/* copyright (c) 2020- Otso Kurkela */
 
 //import 1st party components
 import Profile from './Profile';
 
-const Index = () => {
+export default () => {
     
     
     return (
@@ -16,5 +13,3 @@ const Index = () => {
        
     );
 }
-
-export default Index;

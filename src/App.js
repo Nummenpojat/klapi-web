@@ -1,19 +1,18 @@
-/*
-Copyright (c) 2020 Otso Kurkela & Elias Mäkelä
-*/
+/* copyright (c) 2020- Otso Kurkela & Elias Mäkelä */
+
 // import React and 3rd party components
 import React, { useState, createContext, useContext } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 // import 1st party components
-import TopMenu from './components/navigation/TopMenu';
-import BottomMenu from './components/navigation/BottomMenu';
-import Checklists from './components/Checklists/Checklists';
-import Tasks from './components/Tasks/Tasks';
-import Map from './components/Map/Map';
-import Settings from './components/general/Settings';
-import Profile from './components/general/Profile';
-import Index from './components/general/Index';
+import TopMenu from './components/navigation/menus/TopMenu.jsx';
+import BottomMenu from './components/navigation/menus/BottomMenu.jsx';
+import Checklists from './components/Checklists/Checklists.jsx';
+import Tasks from './components/Tasks/Tasks.jsx';
+import Map from './components/Map/Map.jsx';
+import Settings from './components/general/Settings.jsx';
+import Profile from './components/general/Profile.jsx';
+import Index from './components/general/Index.jsx';
 
 // import 1st party modules
 

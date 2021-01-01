@@ -1,11 +1,12 @@
-/* copyright (c) 2020 Otso Kurkela */
+/* copyright (c) 2020- Otso Kurkela */
 
 // import React and 3rd party components
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 
 //import stylesheets
-import './navigation.css';
+import './../navigation.css';
+
 const BottomMenu = (props) => {
 
 const [bottomLinks, useBottomLinks] = useState(props.bottomLinks);

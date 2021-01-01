@@ -1,16 +1,17 @@
-//import React and 3rd party components
-import React from 'react';
+/* copyright (c) 2020- Otso Kurkela */
+
+
 import {useState} from 'react';
 
 
 //import 1st party modules
-import baseUrl from './../../variables';
+import baseUrl from '../../variables';
 
 //import stylesheets
 import './tasks.css';
 
 
-const Tasks = (props) => {
+export default props => {
     const [tasks, setTasks] = useState();
    
 fetch(`${baseUrl}/api/users/john_doe/tasks`)
@@ -24,5 +25,3 @@ fetch(`${baseUrl}/api/users/john_doe/tasks`)
     );
 
 }
-
-export default Tasks;

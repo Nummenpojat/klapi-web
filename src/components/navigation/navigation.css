@@ -1,3 +1,5 @@
+/* copyright (c) 2020- Otso Kurkela */
+
 .topmenu {
     height: 70px;
     width: 100%;
@@ -42,6 +44,9 @@
     height: auto;
     width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     border-bottom: 1px solid rgb(23, 23, 63);
 }
 
@@ -64,7 +69,16 @@
     font-size: 20px;
 }
 
-
+.dropdown-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+.dropdown-links * {
+    color: #000;
+    text-decoration: none;
+}
 
 @media screen and (max-width: 800px) {
     .outer-topmenu {
