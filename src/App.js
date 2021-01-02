@@ -2,17 +2,9 @@
 
 // import React and 3rd party components
 import React, { useState, createContext, useContext } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 // import 1st party components
-import TopMenu from './components/navigation/menus/TopMenu.jsx';
-import BottomMenu from './components/navigation/menus/BottomMenu.jsx';
-import Checklists from './components/Checklists/Checklists.jsx';
-import Tasks from './components/Tasks/Tasks.jsx';
-import Map from './components/Map/Map.jsx';
-import Settings from './components/general/Settings.jsx';
-import Profile from './components/general/Profile.jsx';
-import Index from './components/general/Index.jsx';
+import KlapiRouter from './components/Router/KlapiRouter';
 
 // import 1st party modules
 
@@ -54,24 +46,8 @@ const App = (props) => {
 
 
   return (
+    <KlapiRouter bottomLinks={bottomLinks}/>
     
-    <Router>
-      <div className="App" id="outer-container">
-        <TopMenu user={user} />
-        <div id="page-wrap">
-          <Switch>
-            <Route exact path="/" component={Index} />
-            <Route exact path="/map" component={Map} />
-            <Route exact path="/checklists" component={Checklists} />
-            <Route exact path="/tasks" component={Tasks} />
-            <Route exact path="/settings" component={Settings} />
-            <Route exact path="/profile" component={Profile} />
-          </Switch>
-
-        </div>
-        <BottomMenu bottomLinks={bottomLinks} />
-      </div>
-    </Router>
   );
 }
 export default App;
