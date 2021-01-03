@@ -13,7 +13,7 @@ import MenuComponents from './MenuComponents';
 export default props => {
     return (
         <Router>
-      <div className="App" id="outer-container">
+      <div >
         <MenuComponents bottomLinks={props.bottomLinks} />
           <Switch>
             <Route exact path="/" component={Index} />
@@ -23,9 +23,6 @@ export default props => {
             <Route exact path="/settings" component={Settings} />
             <Route exact path="/profile" component={Profile} />
           </Switch>
-
-       
-        
       </div>
     </Router>
     );

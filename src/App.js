@@ -31,23 +31,12 @@ const bottomLinks = [
 
 const App = (props) => {
   const [user, setUser] = useState({});
-  
-
-  fetch(`${baseUrl}/api/users/john_doe`)
-    .then(response => response.json())
-    .then(data => {
-      setUser(data);
-    })
-    .catch(error => {
-      console.log(`Error: ${error}`);
-      console.log("If this error is 404, it might be because you don't have server running on your local host.");
-      console.log("This code expects that you have a local copy of backend runnning on port 3001.");
-    });
+  const [scoutMode, setScoutMode] = useState("");
 
 
   return (
     <KlapiRouter bottomLinks={bottomLinks}/>
-    
   );
 }
+
 export default App;
