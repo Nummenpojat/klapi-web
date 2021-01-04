@@ -1,0 +1,9 @@
+Klapi is an open source application that is meant to be used in scout activities.
+It is developed by scout group Hyvinkaan Nummenpojat. It has web- and Android-version.
+
+Klapi's main use is scout camps where you can do multiple things with this software.
+One of uses is locating users during events on scout - only in scout, of course, we don't follow people on their home.
+Another use is in programme, in app, a group leader can assign small tasks for youth. These tasks give points and eg. competitions can be organized through them.
+It can also be used to mark scouts who participate in programme.
+
+Klapi is fully open source, and it's API is too. API has it's own documentation.
