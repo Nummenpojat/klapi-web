@@ -14,7 +14,7 @@ import './tasks.css';
 export default () => {
     
 
-    const [tasks, setTasks] = useState([
+    const [tasks, setTasks] = useState([ 
         {
             id: 0,
             title: "Take picture",
@@ -36,7 +36,7 @@ export default () => {
             points: 10,
             completed: false
         },
-    ]);
+    ]); // these are not real tasks - they are here just for development purposes
 
     console.log(tasks)
     return (

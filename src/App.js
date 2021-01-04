@@ -34,7 +34,7 @@ const App = (props) => {
   const [scoutMode, setScoutMode] = useState("");
 
 
-  return (
+  return ( // App component which is meant to be as clear as possible
     <KlapiRouter bottomLinks={bottomLinks}/>
   );
 }

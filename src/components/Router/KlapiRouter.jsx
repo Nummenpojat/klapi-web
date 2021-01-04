@@ -10,10 +10,11 @@ import Profile from './../general/dropdown/Profile';
 import Index from './../general/Index';
 import MenuComponents from './MenuComponents';
 
+/* this router contains every route of the app */
 export default props => {
     return (
         <Router>
-      <div >
+      <div>
         <MenuComponents bottomLinks={props.bottomLinks} />
           <Switch>
             <Route exact path="/" component={Index} />
