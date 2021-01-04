@@ -1,6 +1,6 @@
 {
   "name": "klapi-web",
-  "version": "0.2.6",
+  "version": "0.2.9",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.5",
