@@ -11,17 +11,42 @@ import baseUrl from '../../variables';
 import './tasks.css';
 
 
-export default props => {
-    const [tasks, setTasks] = useState();
-   
-fetch(`${baseUrl}/api/users/john_doe/tasks`)
+export default () => {
     
-    .then(data => {
-        setTasks(data);
-    }); // save users tasks in state
-    console.log(tasks);
+
+    const [tasks, setTasks] = useState([
+        {
+            id: 0,
+            title: "Take picture",
+            description: "Take a photo with camp leader.",
+            points: 10,
+            completed: false
+        },
+        {
+            id: 1,
+            title: "Go to stage",
+            description: "Go to stage of event and take photo.",
+            points: 20,
+            completed: true
+        },
+        {
+            id: 2,
+            title: "Dance with leader",
+            description: "Dance with leader of your scout group",
+            points: 10,
+            completed: false
+        },
+    ]);
+
+    console.log(tasks)
     return (
-        <h1></h1>
+        <div>
+            {
+                tasks.map((task, i) => {
+                    return(<p>{task.title}</p>);
+                })
+            }
+        </div>
     );
 
 }
