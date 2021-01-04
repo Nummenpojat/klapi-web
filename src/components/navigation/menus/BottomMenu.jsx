@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 import './../navigation.css';
 
 const BottomMenu = (props) => {
-
+// links to apply in bottom menu are got from parent components
 const [bottomLinks, useBottomLinks] = useState(props.bottomLinks);
     return (
         <div className="bottom-nav">
