@@ -1,7 +1,7 @@
 /* copyright (c) 2020- Otso Kurkela */
 
 // import React and 3rd party components
-import React, {useState} from 'react';
+import {useEffect} from 'react';
 import { Link } from 'react-router-dom';
 
 //import stylesheets
@@ -9,17 +9,20 @@ import './../navigation.css';
 
 const BottomMenu = (props) => {
 // links to apply in bottom menu are got from parent components
-const [bottomLinks, useBottomLinks] = useState(props.bottomLinks);
-    return (
-        <div className="bottom-nav">
-    {bottomLinks.map((link, i) => {
-        return (
-        <Link to={link.link}><p className="bottom-link">{link.name}</p></Link>
-        );
-    })}
 
+return (
+        <div className="bottom-nav">
+    
+        {
+            Object.keys(props.bottomLinks).map((bottomLink, i) => {
+                return (
+                    <Link to={props.bottomLinks[bottomLink].link}><p className="bottom-link">{props.bottomLinks[bottomLink].title}</p></Link>
+                );
+            })
+        }
 
         </div>
     );
+
     }
 export default BottomMenu;

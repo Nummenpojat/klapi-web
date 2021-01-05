@@ -12,6 +12,7 @@ import MenuComponents from './MenuComponents';
 
 /* this router contains every route of the app */
 export default props => {
+  
     return (
         <Router>
       <div>

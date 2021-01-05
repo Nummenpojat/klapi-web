@@ -1,7 +1,7 @@
 /* copyright (c) 2020- Otso Kurkela & Elias Mäkelä */
 
 // import React and 3rd party components
-import React, { useState, createContext, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 
 // import 1st party components
 import KlapiRouter from './components/Router/KlapiRouter';
@@ -31,8 +31,46 @@ const bottomLinks = [
 
 const App = (props) => {
   const [user, setUser] = useState({});
+  
   const [scoutMode, setScoutMode] = useState("");
+  const [bottomLinks, setBottomLinks] = useState([]);
 
+  useEffect(() => {
+
+    setScoutMode("weeklyProgramme");
+
+    if (scoutMode == "weeklyProgramme") {
+      setBottomLinks({
+        tasks: {
+          title: "Tasks",
+          link: "/tasks"
+        },
+        map: {
+          title: "Checklists",
+          link: "/checklists"
+        }
+      })
+
+    } 
+    else if (scoutMode == "camp") {
+      setBottomLinks({
+        tasks: {
+          title: "Tasks",
+          link: "/tasks"
+        },
+        map: {
+          title: "Map",
+          link: "/map"
+        }
+      })
+
+    } 
+    
+    else {
+      setBottomLinks({});
+    }
+  }, [scoutMode])
+  
 
   return ( // App component which is meant to be as clear as possible
     <KlapiRouter bottomLinks={bottomLinks}/>
