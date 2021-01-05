@@ -62,11 +62,10 @@
     bottom: 0;
 }
 
-
-
 .bottom-link {
     color: #ffffff;
     font-size: 20px;
+    text-decoration: none;
 }
 
 .dropdown-links {
