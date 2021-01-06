@@ -1,5 +1,14 @@
+<<<<<<< HEAD
 body {
   margin: 0;
+=======
+/*
+Copyright (c) 2020 Otso Kurkela
+*/
+body {
+  margin: 0;
+  padding: 0;
+>>>>>>> 832374c73016a6e2b6e61e791049e48ae5b77096
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -11,3 +20,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+<<<<<<< HEAD
+=======
+
+* {
+  box-sizing: border-box;
+}
+
+#page-wrap {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+>>>>>>> 832374c73016a6e2b6e61e791049e48ae5b77096
