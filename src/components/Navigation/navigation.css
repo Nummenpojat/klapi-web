@@ -1,0 +1,85 @@
+/* copyright (c) 2020- Otso Kurkela */
+
+.topmenu {
+    height: 70px;
+    width: 100%;
+    background-color: #253764;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+    width: 40px;
+}
+.burger * {
+    width: 100%;
+    height: 4px;
+    background-color: #ffffff;
+}
+
+@keyframes toggleDropdown {
+    0% {height: 0;}
+    100% {height: auto;}
+}
+
+#dropdown {
+    animation-name: toggleDropdown;
+    animation-duration: 2s;
+}
+.dropdown-invisible {
+    overflow:hidden;
+    background:#000;
+    color:#fff;
+    height:0;
+    padding: 0 18px;
+    width:100px;
+}
+.dropdown-visible {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #253764;
+}
+
+.bottom-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 10%;
+    background-color: #253764;
+    position: absolute;
+    bottom: 0;
+}
+
+.bottom-link {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.dropdown-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dropdown-links * {
+    color: #000;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+    .outer-topmenu {
+        margin-left: 30%;
+    }
+}
