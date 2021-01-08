@@ -13,7 +13,7 @@ import './App.css';
 
 export default () => {
   const [user, setUser] = useState({});
-  const [scoutMode, setScoutMode] = useState("weeklyProgramme");
+  const [scoutMode, setScoutMode] = useState("weeklyProgram");
   
 
  
