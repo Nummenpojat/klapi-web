@@ -1,24 +1,28 @@
 /* copyright (c) 2020- Otso Kurkela */
 
 // import React and 3rd party components
-import {useEffect} from 'react';
+import {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
+import BottomLinks from './bottomLinks';
 
 //import stylesheets
 import './../navigation.css';
 
-export default (props:any) => {
-// links to apply in bottom menu are got from parent components
 
-return (
+export default (props:any) => {
+    const klapiBottomLinks = new BottomLinks;
+    const [scoutMode, setScoutMode] = useState(props.scoutMode);
+    const [bottomLinks, setBottomLinks] = useState(klapiBottomLinks.getLinks(scoutMode));
+    
+    return (
         <div className="bottom-nav">
     
         {
-            Object.keys(props.bottomLinks).map((bottomLink, i) => {
-                return (
-                    <Link key={i} to={props.bottomLinks[bottomLink].link}><p className="bottom-link">{props.bottomLinks[bottomLink].title}</p></Link>
-                );
-            })
+           bottomLinks.map((bottomLink, i) => {
+               return (
+                   <Link to={bottomLink.link} className="bottom-link" key={bottomLink.title}>{bottomLink.title}</Link>
+               );
+           })
         }
 
         </div>

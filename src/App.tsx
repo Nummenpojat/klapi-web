@@ -13,14 +13,13 @@ import './App.css';
 
 export default () => {
   const [user, setUser] = useState({});
+  const [scoutMode, setScoutMode] = useState("weeklyProgram");
   
-  const [scoutMode, setScoutMode] = useState("");
-  const [bottomLinks, setBottomLinks] = useState([]);
 
-  
+ 
   
 
   return ( // App component which is meant to be as clear as possible
-    <KlapiRouter bottomLinks={bottomLinks}/>
+    <KlapiRouter scoutMode={scoutMode}/>
   );
 }

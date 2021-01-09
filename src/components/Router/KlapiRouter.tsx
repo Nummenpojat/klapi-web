@@ -16,7 +16,7 @@ export default (props:any) => {
     return (
         <Router>
       <div>
-        <MenuComponents bottomLinks={props.bottomLinks} />
+        <MenuComponents scoutMode={props.scoutMode} />
           <Switch>
             <Route exact path="/" component={Index} />
             <Route exact path="/map" component={Map} />
