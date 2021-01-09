@@ -1,4 +1,4 @@
-const toggleDropdown = (dropdown:any) => {
+const toggleDropdown = (dropdown:any):void => {
     console.log(typeof(dropdown))
     if(dropdown.classList.contains("dropdown-invisible")) {
         dropdown.classList.remove("dropdown-invisible");
