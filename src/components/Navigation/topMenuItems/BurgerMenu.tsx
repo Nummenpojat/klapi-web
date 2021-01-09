@@ -10,7 +10,7 @@ export default () => {
      
     return (
         <div className="burger" onClick={() => {
-            toggleDropdown(document.querySelector("#dropdown"));
+            toggleDropdown("#dropdown");
         }}>
             {
                 [0, 1, 2].map((i) => {
