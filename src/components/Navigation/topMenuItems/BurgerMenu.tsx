@@ -9,9 +9,7 @@ export default () => {
     
      
     return (
-        <div className="burger" onClick={() => {
-            toggleDropdown(document.querySelector("#dropdown"));
-        }}>
+        <div className="burger" onClick={() => toggleDropdown("#dropdown")}>
             {
                 [0, 1, 2].map((i) => {
                     return (<div key={i}></div>);
