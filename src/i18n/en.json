@@ -1,0 +1,22 @@
+
+    {
+        "generic": {
+            "welcomeMsg": "Welcome to Klapi!",
+            "testMsg": "This is a test page.",
+            "changeViewBtn": "Change view" },
+        
+          "navBar": {
+          "location": "Location",
+          "tasks": "Tasks",
+          "checklist": "Checklist"},
+
+          "tasks": {
+            "title": "Tasks",
+            "completed": "Completed tasks:",
+            "uncompleted": "Uncompleted tasks:"},
+          "dropdown": {
+            "profile": "Profile",
+            "settings": "Settings" }
+     }
+          
+  
