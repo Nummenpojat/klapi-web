@@ -20,7 +20,7 @@ export default (props:any) => {
         {
            bottomLinks.map((bottomLink, i) => {
                return (
-                   <Link to={bottomLink.link} className="bottom-link" key={bottomLink.title}>{bottomLink.title}</Link>
+                   <Link to={bottomLink.link} className="bottom-link" key={i}>{bottomLink.title}</Link>
                );
            })
         }

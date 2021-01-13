@@ -1,0 +1,22 @@
+{
+    "generic": {
+      "welcomeMsg": "Tervetuloa Klapiin!",
+      "testMsg": "Tämä on testisivu.",
+      "changeViewBtn": "Vaihda näkymää"
+    },
+      "navBar": {
+      "location": "Sijainti",
+      "tasks": "Tehtävät",
+      "checklist": "Rastilista"
+    },
+
+    "tasks": {
+      "title": "Tehtävät",
+      "completed": "Suoritetut tehtävät:",
+      "uncompleted": "Suorittamattomat tehtävät:",
+
+      "dropdown": {
+        "profile": "Profiili",
+        "settings": "Asetukset"}
+    }
+}

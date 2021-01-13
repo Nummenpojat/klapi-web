@@ -27,7 +27,7 @@ export default class BottomLinks {
         }
     }
 
-    getAllLinks() {
+    getAllLinks():bottomLink[] {
         return [this.mapLink, this.tasksLink, this.checklistsLink];
     }
 }
