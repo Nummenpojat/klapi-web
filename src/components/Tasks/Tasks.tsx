@@ -38,7 +38,7 @@ export default () => {
         <div>
             {
                 tasks.map((task, i) => {
-                    return(<p>{task.title}</p>);
+                    return(<p key={i}>{task.title}</p>);
                 })
             }
         </div>
