@@ -16,14 +16,16 @@ export default (props:any) => {
     
     return (
         <div className="bottom-nav">
-    
-        {
-           bottomLinks.map((bottomLink, i) => {
+            <div className="bottom-links">
+            {
+            bottomLinks.map((bottomLink, i) => {
                return (
                    <Link to={bottomLink.link} className="bottom-link" key={i}>{bottomLink.title}</Link>
                );
-           })
-        }
+            })
+            }
+            </div>
+        
 
         </div>
     );
