@@ -44,6 +44,11 @@
 }
 
 .bottom-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-links {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -53,8 +58,8 @@
     background-color: #253764;
     position: absolute;
     bottom: 0;
+    
 }
-
 .bottom-link {
     color: #ffffff;
     font-size: 24px;
