@@ -23,22 +23,15 @@
     background-color: #ffffff;
 }
 
-@keyframes toggleDropdown {
-    0% {height: 0;}
-    100% {height: auto;}
-}
 
-#dropdown {
-    animation-name: toggleDropdown;
-    animation-duration: 2s;
-}
 .dropdown-invisible {
     overflow:hidden;
-    background:#000;
-    color:#fff;
-    height:0;
-    padding: 0 18px;
-    width:100px;
+    height:0px;
+    width:0%;
+    position: absolute;
+}
+#dropdown {
+    transition: width 0.4s;
 }
 .dropdown-visible {
     height: auto;
@@ -51,6 +44,11 @@
 }
 
 .bottom-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-links {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -60,12 +58,13 @@
     background-color: #253764;
     position: absolute;
     bottom: 0;
+    
 }
-
 .bottom-link {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 24px;
     text-decoration: none;
+    list-style: none;
 }
 
 .dropdown-links {
